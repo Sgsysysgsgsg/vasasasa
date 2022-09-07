@@ -16,4 +16,3 @@ jobs:
     - uses: actions/checkout@latest
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag relaxingg/docker:tagname
-       run: docker login -u relaxingg -p ${{ secrets_DOCKER_TOKEN }} && docker push relaxingg/docker:tagname
