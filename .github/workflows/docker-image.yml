@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@latest
+    - uses: actions/checkout@6
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag relaxingg/docker:tagname
